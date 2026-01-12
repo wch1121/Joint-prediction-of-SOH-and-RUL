@@ -20,24 +20,44 @@ This project proposes a **multi-task targeted learning framework** that jointly 
 - Selective feature learning for different degradation indicators
 - Error propagation in traditional two-step prediction methods
 
-### Key features
+---
 
-- **Multi-scale Feature Extraction Module (FEM)**  
-  Captures local degradation patterns from raw voltage sequences using multi-scale 1D CNNs.
+## 📊 Datasets
 
-- **Improved Extended LSTM (IE-LSTM)**  
-  Enhances long-term memory with exponential gating and stabilized internal states.
+The experiments in the paper are conducted on five public battery aging datasets:
 
-- **Dual-Stream Attention Module (DSAM)**  
-  - Polarized Attention for SOH prediction  
-  - Sparse Attention for RUL prediction  
+- **NASA**  
+  https://data.nasa.gov/
 
-- **End-to-end Multi-task Learning**  
-  Direct many-to-two mapping from voltage sequences to SOH and RUL.
+- **CALCE (University of Maryland)**  
+  https://calce.umd.edu/battery-data
+
+- **XJTU**  
+  https://github.com/wang-fujin/PINN4SOH
+
+- **Oxford**  
+  https://ora.ox.ac.uk/
+
+- **MIT**  
+  https://data.matr.io/1/
+
+> ⚠️ **Note:** Due to dataset licenses, this repository does **not** redistribute raw data.  
+Please download the datasets from their official sources and follow the preprocessing steps described in the paper.
 
 ---
 
-## 🧠 Network Architecture
+## ⚙️ Environment Requirements
 
-The overall framework consists of four main components:
+- Python >= 3.8  
+- PyTorch >= 1.10  
+- NumPy  
+- SciPy  
+- scikit-learn  
+- Hyperopt  
+
+Example installation:
+
+```bash
+pip install torch numpy scipy scikit-learn hyperopt
+
 
