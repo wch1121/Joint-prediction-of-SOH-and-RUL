@@ -31,15 +31,27 @@ This project proposes a **multi-task targeted learning framework** that jointly 
 - scikit-learn >=1.3.2
 - matplotlib >=3.7.5
 - tqdm >=4.66.4
-- 
+
 Install requirements
 ```
 pip install -r requirement.txt
 ```
 
-Example installation:
+# Training and Testing
+```
+python3.8 main.py
+```
 
-```bash
-pip install torch numpy scipy scikit-learn hyperopt
+# citation
+If you find ETSformer useful, please consider citing:
+```javascript
+@article{wang2025multi,
+  title={A Multi-Task Targeted Learning Framework for Lithium-Ion Battery State-of-Health and Remaining Useful Life},
+  author={Wang, Chenhan and Bao, Zhengyi and Lin, Huipin and Nie, Jiahao and Zhu, Chunxiang},
+  journal={IEEE Transactions on Transportation Electrification},
+  year={2025},
+  publisher={IEEE}
+}
+```
 
 
