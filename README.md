@@ -22,38 +22,20 @@ This project proposes a **multi-task targeted learning framework** that jointly 
 
 ---
 
-## 📊 Datasets
-
-The experiments in the paper are conducted on five public battery aging datasets:
-
-- **NASA**  
-  https://data.nasa.gov/
-
-- **CALCE (University of Maryland)**  
-  https://calce.umd.edu/battery-data
-
-- **XJTU**  
-  https://github.com/wang-fujin/PINN4SOH
-
-- **Oxford**  
-  https://ora.ox.ac.uk/
-
-- **MIT**  
-  https://data.matr.io/1/
-
-> ⚠️ **Note:** Due to dataset licenses, this repository does **not** redistribute raw data.  
-Please download the datasets from their official sources and follow the preprocessing steps described in the paper.
-
----
-
 ## ⚙️ Environment Requirements
 
 - Python >= 3.8  
-- PyTorch >= 1.10  
-- NumPy  
-- SciPy  
-- scikit-learn  
-- Hyperopt  
+- PyTorch >= 2.1.0+cu118 
+- NumPy >=1.24.4
+- SciPy >=1.10.1 
+- scikit-learn >=1.3.2
+- matplotlib >=3.7.5
+- tqdm >=4.66.4
+- 
+Install requirements
+```
+pip install -r requirement.txt
+```
 
 Example installation:
 
